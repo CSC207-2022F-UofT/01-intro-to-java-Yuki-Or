@@ -45,7 +45,7 @@ public class Basics {
         /* TODO (Task 1): Write a line of code below that prints the string
          *                Hello World!
          */
-        System.out.println("Hello! World!");
+        System.out.println("Hello World!");
 
 
 
@@ -148,7 +148,7 @@ public class Basics {
         StringBuilder ret = new StringBuilder();
 
         // Fill in the rest of the body here
-        String[] word_lst = to_split.split(" ", 0);
+        String[] word_lst = to_split.split("\\s+", 0);
         for (int i = 0; i < 8; i++){
             ret.append(word_lst[i].charAt(0));
         }
@@ -179,9 +179,11 @@ public class Basics {
          *                You can index into arrays as we do in Python
          *                (e.g. arr[i] gives you the item at index i).
          */
+        if (arr.length > 1){
         for (int j : arr) {
-            if (j % 2 == 1 && arr.length != 1) {
+            if (j % 2 == 1) {
                 current_sum += j;
+                }
             }
         }
 
