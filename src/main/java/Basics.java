@@ -180,9 +180,9 @@ public class Basics {
          *                (e.g. arr[i] gives you the item at index i).
          */
         if (arr.length > 1){
-        for (int j : arr) {
-            if (j % 2 == 1) {
-                current_sum += j;
+        for (int i = 0; i < arr.length; i++) {
+            if (i % 2 == 1) {
+                current_sum += i;
                 }
             }
         }
